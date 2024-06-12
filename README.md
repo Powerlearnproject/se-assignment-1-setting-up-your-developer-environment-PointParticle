@@ -76,8 +76,9 @@
     - I ran the downloaded file and followed the installation prompts.
     - I encountered an issue: "Microsoft Visual C++ 2019 Redistributable Package (x64) is not installed."
     - Solution: I went to the [Microsoft Visual C++ Redistributable page](https://aka.ms/vs/16/release/vc_redist.x64.exe).
-    - I downloaded and installed the package.
-    - I re-ran the MySQL installer and completed the installation.
+    - I re-ran the MySQL installer and during the installation:
+    - I selected the developer option during the installation process.
+    - I set up a password for the MySQL root user when prompted.
   - Outcome: MySQL installed successfully.
 
 - **Explore Extensions and Plugins:**

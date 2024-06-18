@@ -1,54 +1,109 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/vbnbTt5m)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15236604&assignment_repo_type=AssignmentRepo)
-# Dev_Setup
-Setup Development Environment
 
-#Assignment: Setting Up Your Developer Environment
+## Assignment: Setting Up My Developer Environment
 
-#Objective:
-This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
+### Tasks and Steps:
 
-#Tasks:
+- **Select Your Operating System (OS):**
 
-1. Select Your Operating System (OS):
-   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+  - I used Windows 10, which came pre-installed on my laptop.
+  - [Download Windows 10](https://www.microsoft.com/software-download/windows10) (if needed).
 
-2. Install a Text Editor or Integrated Development Environment (IDE):
-   Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
-3. Set Up Version Control System:
-   Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
+- **Install a Text Editor or Integrated Development Environment (IDE):**
 
-4. Install Necessary Programming Languages and Runtimes:
-  Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.
+  - I installed Visual Studio Code.
+  - Steps:
+    - I went to the [Visual Studio Code download page](https://code.visualstudio.com/Download).
+    - I downloaded the installer for Windows.
+    - I ran the downloaded file and followed the installation prompts.
+  - Outcome: Visual Studio Code installed without issues.
 
-5. Install Package Managers:
-   If applicable, install package managers like pip (Python).
+- **Set Up Version Control System:**
 
-6. Configure a Database (MySQL):
-   Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html
+  - I installed Git and configured it on my local machine.
+  - Steps:
+    - I went to the [Git download page](https://git-scm.com/).
+    - I downloaded the Git installer for Windows.
+    - I ran the downloaded file and followed the installation prompts.
+    - I created a [GitHub account](https://github.com) (since I didn’t have one).
+    - I opened Git Bash and configured Git with my username and email
+    - I initialized a Git repository for my project:
+      ```bash
+      git init
+      git add .
+      git commit -m
+      ```
+  - Outcome: Git installed and configured successfully.
 
-7. Set Up Development Environments and Virtualization (Optional):
-   Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.
+- **Install Necessary Programming Languages and Runtimes:**
 
-8. Explore Extensions and Plugins:
-   Explore available extensions, plugins, and add-ons for your chosen text editor or IDE to enhance functionality, such as syntax highlighting, linting, code formatting, and version control integration.
+  - I installed Python.
+  - Steps:
+    - I opened Google Chrome and searched for "python.org".
+    - I went to the [official Python website](https://www.python.org/).
+    - I downloaded the latest version of Python.
+    - I located the downloaded file and double-clicked to install.
+    - After installation, I opened Command Prompt (cmd) and typed:
+      ```bash
+      python --version
+      ```
+    - I encountered an issue: Command Prompt showed a message indicating to either install Python from Microsoft Store or disable the restriction.
+    - Solution: I installed Python directly from the Microsoft Store.
+    - I verified the installation again in Command Prompt:
+      ```bash
+      python --version
+      ```
+  - Outcome: Python installed successfully.
 
-9. Document Your Setup:
-    Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process. 
+- **Install Package Managers:**
 
-#Deliverables:
-- Document detailing the setup process with step-by-step instructions and screenshots where necessary.
-- A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
-- A reflection on the challenges faced during setup and strategies employed to overcome them.
+  - I ensured pip (Python package manager) was installed.
+  - Steps:
+    - After installing Python, pip was installed automatically.
+    - I verified pip installation in Command Prompt:
+      ```bash
+      pip --version
+      ```
+  - Outcome: pip installed successfully.
 
-#Submission:
-Submit your document and GitHub repository link through the designated platform or email to the instructor by the specified deadline.
+- **Configure a Database (MySQL):**
 
-#Evaluation Criteria:**
-- Completeness and accuracy of setup documentation.
-- Effectiveness of version control implementation.
-- Appropriateness of tools selected for the project requirements.
-- Clarity of reflection on challenges and solutions encountered.
-- Adherence to submission guidelines and deadlines.
+  - I installed the MySQL database.
+  - Steps:
+    - I went to the [MySQL download page](https://dev.mysql.com/downloads/windows/installer/5.7.html).
+    - I downloaded the MySQL installer for Windows.
+    - I ran the downloaded file and followed the installation prompts.
+    - I encountered an issue: "Microsoft Visual C++ 2019 Redistributable Package (x64) is not installed."
+    - Solution: I went to the [Microsoft Visual C++ Redistributable page](https://aka.ms/vs/16/release/vc_redist.x64.exe).
+    - I re-ran the MySQL installer and during the installation:
+    - I selected the developer option during the installation process.
+    - I set up a password for the MySQL root user when prompted.
+  - Outcome: MySQL installed successfully.
 
-Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
+- **Explore Extensions and Plugins:**
+  - I enhanced Visual Studio Code functionality.
+  - Steps:
+    - I opened Visual Studio Code.
+    - I went to the Extensions view by clicking the Extensions icon
+    - I searched for and installed the following useful extensions:
+      - **Prettier - Code formatter**: For code formatting.
+      - **Live Server**: For live reloading of web pages during development.
+      - **GitHub Pull Requests and Issues**: For managing pull requests and issues within VS Code.
+      - **Live Share**: For real-time collaborative development.
+    - I also installed other useful extensions, such as:
+      - **Python**
+      - **GitLens**
+      - **ESLint**
+  - Outcome: Extensions installed to improve coding workflow.
+
+### Reflection:
+
+- **Challenges:**
+
+  - I encountered an issue with Python installation due to restrictions in Command Prompt.
+  - I faced an installation issue with MySQL due to a missing Visual C++ Redistributable.
+
+- **Solutions:**
+  - I resolved the Python installation issue by installing it from the Microsoft Store.
+  - I fixed the MySQL installation by downloading and installing the required Visual C++ Redistributable package from the Microsoft site.
